@@ -24,6 +24,15 @@ h1 {
     padding-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    #left {
+        flex-grow: 100;
+        min-width: 1em;
+        max-width: 4em;
+        padding-bottom: 10px;
+    }
+}
+
 #middle {
     max-width: 31em;
 }
