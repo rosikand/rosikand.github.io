@@ -1,0 +1,82 @@
+
+body {
+    /* background-color: #f4f5ef; */
+    /* background-color: #ffffff; */
+    background-color: #f0e5d5;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    width: 65%;
+    margin: 10 auto;
+}
+
+a {
+  color: #8b0000;
+}
+
+about-content {
+    text-indent: 45em;
+}
+
+.text-content:a {
+    color: #b6ee55;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 17px;
+    width: 27px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 40%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: #000000;
+    color: white;
+}
+
+.fa-envelope-square {
+    background: #d3d3d3;
+    color: black;
+}
+
+.fa-rss {
+    background: #ff6600;
+    color: white;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    border: 1.5px solid #000;
+}
+
+
+a.no-decoration {
+    text-decoration: none; /* Removes underline */
+    color: inherit;        /* Makes color same as surrounding text */
+}
+
+.arrow-back-header {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}

@@ -1,0 +1,26 @@
+@import url("./home.css");
+
+
+/* body {
+    background-color: #f0e5d5;
+} */
+
+
+.home-page-nav-link {
+    color: rgb(0, 0, 0);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+.date {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
