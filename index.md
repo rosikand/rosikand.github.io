@@ -11,21 +11,27 @@ format:
 <!-- ☃ -->
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+
+
+<!-- <div class="social-icons"> -->
+  <a href="https://github.com/rosikand" class="fa fa-github"></a>
+  <a href="https://twitter.com/rosikand" class="fa fa-twitter"></a>
+  <a href="mailto:rsikand@stanford.edu" class="fa fa-envelope-square"></a>
+  <a href="https://www.linkedin.com/in/rosikand/" class="fa fa-linkedin"></a>
+  <!-- <a href="https://scholar.google.com/citations?user=E5Z8wUoAAAAJ&hl=en" class="fa fa-google"></a>   -->
+  <a href="https://rosikand.substack.com/" class="fa fa-rss"></a>  
+<!-- </div> -->
 
 
 
-<a href="https://github.com/rosikand" class="fa fa-github"></a>
-<a href="https://twitter.com/rosikand" class="fa fa-twitter"></a>
-<a href="mailto:rsikand@stanford.edu" class="fa fa-envelope-square"></a>
-<a href="https://www.linkedin.com/in/rosikand/" class="fa fa-linkedin"></a>
-<a href="https://rosikand.substack.com/" class="fa fa-rss"></a>  
+**Stanford CS (AI) B.S., M.S. 2025.**
 
 
-Stanford CS (AI) B.S., M.S. 2025.
+<!-- <img alt="picture 2" src="https://rosikand.github.io/assets/baby.jpg" class="profile-image" /> -->
 
 
-<!-- <img alt="picture 2" src="https://rosikand.github.io/assets/tpfp.jpg" class="profile-image" /> -->
-
+<!-- <img src="./assets/baby.jpg" alt="Profile picture" class="profile-image"> -->
 
 
 #### **About**:

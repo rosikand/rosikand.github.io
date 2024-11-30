@@ -1,80 +1,31 @@
 [
   {
-    "objectID": "misc.html",
-    "href": "misc.html",
+    "objectID": "golf.html",
+    "href": "golf.html",
     "title": "",
     "section": "",
     "text": "← back to home"
   },
   {
-    "objectID": "misc.html#misc.",
-    "href": "misc.html#misc.",
+    "objectID": "golf.html#rohans-golf-page",
+    "href": "golf.html#rohans-golf-page",
     "title": "",
-    "section": "Misc.",
-    "text": "Misc.\n…"
+    "section": "Rohan’s Golf Page ⛳️",
+    "text": "Rohan’s Golf Page ⛳️\n\nStats\n\nCurrent handicap index: 3.4\nBest round: 69 (-1; Mill Creek Golf Course - South Course; Boardman, OH; June 21, 2018)\n\n\n\nCourses I’ve Played\n\nPinehurst #2\nBaltusrol (lower)\nSt. Andrews\n\n\n\nCourse Designs\nLaredo Farms GC:\n\nMaple Valley GC:"
   },
   {
-    "objectID": "blog/personalai.html",
-    "href": "blog/personalai.html",
-    "title": "",
-    "section": "",
-    "text": "← back to home, blog"
-  },
-  {
-    "objectID": "blog/personalai.html#the-next-frontiers-personalization-of-ai-models",
-    "href": "blog/personalai.html#the-next-frontiers-personalization-of-ai-models",
-    "title": "",
-    "section": "The Next Frontiers: Personalization of AI models",
-    "text": "The Next Frontiers: Personalization of AI models\nThis post is part of my \"The Next Frontiers\" series where I delve deeper into a technology that I think will be pervasive across society in 5 to 15 years.\nThis post focuses on the personalization of AI models. Right now, we have these uniform mega-models that are hosted in the cloud, running in application layer products. For each application, the weights stay the same, meaning the model itself is the same for application A and application B. Perhaps this means generality, but it can also be a limitation. Instead of having a 175B-parameter model that is deployed on application A and application B, what if we have separate LoRa-adapted, fine-tuned models for application’s A and B respectively.\n\nComputational gains: due to Moore’s law, training ML models will become more efficient and less expensive per parameter. This enables larger models to be trained at a cheaper cost. Perhaps the real benefit of the increasing computational and hardware efficiencies is realized in the inference realm. It is not far fetched that we can have 175B parameter models running on device in the near future.\nResearch and algorithmic gains: The advent of scaling laws, the scaling hypothesis, and the bitter lesson all point to the fact that methods that leverage computation efficiently will perform better in the long run. This implies that the larger the model, the better it will perform. However, recent algorithmic advances add another tangent to think about. OpenAI’s strawberry algorithm scales inference-time compute to be able to reason better. Notably, this advancement is detached from an increasing in model size and training compute: it was all done on the inference side. The conseqouence of this is that smaller models, embedded with these newfound reasoning capabilities due to inference-time compute, might result in the adoption of smaller models across the application layer. More specificially, reasoning increases might lead to applications training their own 1B-parameter models instead of relying on the ChatGPT 175B+-model api. Another example of algorithmic development is that of State Space Models (SSM’s). The premise behind these models is that they scale linearly wrt the input size instead of quadratically like transformers do. Cartesia, the company developing these models for real-world use, thinks that this development will enable ubiqitious intelligence at scale, on any device.\nMiddle-layer developments: include techniques such as RAG. Thinking of layers, one can imagine the base layer as the OpenAI API model, the middle layer as something like RAG, and the application (final) layer as the product which is offered to the user. These middle layers essentially try to make the models more tailored for application use. For some reasons that I cannot quite pin down yet, I am slightly bearish on these seeing any long-term adoption. I think this is due to the previous two points: if we ride the waves of (1) computational advances and (2) reasoning and algorithmic advances, middle layer technologies lose their moat and become unnessary: what is the point of RAG if we can have a small model training on the user’s documents themselves? I do however think there exists a n-to-m year latency where n is upper bounded by ~2 and m is upper bounded by ~10 in which middle layer technologies like RAG stay relevant towards the goal of personalization of AI models.\nSome remaining questions:\n\nHow do we iterively update models on the fly in presence of new data? If we deploy a small model on-device tailored for a specific user, what do we do after they added 100 more documents to their device? Do we warm start the pre-training process? Fine-tune with LoRa? If so, how would one train these models on the fly, on-device, untethered from the cloud?\nPerhaps we avoid all of this by \"in-context learning\" and avoid gradient updates all together.\n\nConlusion: All of the above questions and comments remain pain points for getting AI models to be more personalized. Though, the resulting increase in algorithmic and computational advances might lead us to a world where we all have a small model living in our device, trained on our own data. One that understands us a bit better. A more personalized AI model. A second brain of some sorts."
-  },
-  {
-    "objectID": "blog/problems.html",
-    "href": "blog/problems.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "",
     "section": "",
-    "text": "← back to home, blog"
+    "text": "Stanford CS (AI) B.S., M.S. 2025.\n\n\n\n\n\n\nI am interested in AI research, ML engineering, startups, and venture capital.\nIn the past, I’ve conducted research in self-supervised learning at SAIL, engineered segmentation models at insitro, and built many ML projects.\nI also infrequently write about startups and venture capital on Substack at Rohan’s Random Walks.\nIn my free time, I play golf and poker. \n\n\n\n\n\n\n\nBlog\nPortfolio\nMisc."
   },
   {
-    "objectID": "blog/problems.html#problems-and-ideas-c.-fall-2024",
-    "href": "blog/problems.html#problems-and-ideas-c.-fall-2024",
-    "title": "",
-    "section": "Problems and Ideas, c. Fall 2024",
-    "text": "Problems and Ideas, c. Fall 2024\nHere is (an ongoing) list of some problems and ideas I am currently thinking about, circa November 2024. If you have any thoughts, please reach out!\n\nPoor FLOP utilization of GPU cores: billions on top of billions are being spent on compute to power the recent AI revolution, propelling NVIDIA to be the most valuable company in the world. From well-funded labs to seed-stage startups, buying GPU’s for training and performing inference with increasingly large models is necessary. However, what most people don’t realize is that the physical cores on these GPU’s are often underutilized, on training and inference jobs. The recent Llama 3 technical report (see page 10 here) states 38-43% MFU (Model FLOPs Utilization) during the training of this suite of models. That’s right: one of the world’s most funded and talent-dense research labs can’t even achieve half of complete FLOP utilization of its compute infrastructure. With over half a trillion in spending on AI, you’d think we’d better be utilizing each individual GPU core to the best of its ability at every second–idle time per core effectively costs billions of dollars over time. How can we solve this problem? Perhaps a generalizable framework for writing CUDA kernels? Better GPU programmers? Model-specific hardware? Something you propose? I’m not sure, and I think this is a really difficult technical problem. But if you have any thoughts, please let me know.\nNo AI-first horizontal robotics platform and infra: ROS is subpar, is old software, and is not designed to be integrated with the modern AI stack. New robotics companies are building robotics platforms from the ground up, through forward-thinking systems languages like Rust. Matic’s robotic stack literally runs inside a single compiled rust process on-device (apparently you can deploy your PyTorch model endpoint through a CUDA kernel ported to rust to run on-device)! In addition to building better platforms, we are going to need better infra. AI models are getting larger and larger. LLM’s that OpenAI and Anthropic build can run on acre-scale datacenters without issue. But how are we going to deploy billions-scale ACT’s or VLA’s on-device for physical, robotic applications? Essential points of interest include low-latency, non-leaky abstractions, and specialized hardware. In 10 years, the world will look a lot more roboticized than it is today. Many are predicting GPT-like moments for robotic manipulation. If successful, industries that require manual labor are bound to be severely transformed. How are we going to build the infrastructure to support all of this?\n\n\n\n\nAI in medicine for diagnostic purposes: The potential for using AI for medical diagnostic purposes is actually what first got me interested in machine learning a half decade ago. “We can classify lung nodules as cancerous or not months before symptoms appear?!” I read. Yet, despite significant progress in academia, bureaucratic obstacles, resistance from traditionalist healthcare staff, and the lack of robustness in machine learning models continue to hinder the transformative potential of AI in healthcare. How will we fix this?"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
+    "objectID": "index.html#rohan-sikand",
+    "href": "index.html#rohan-sikand",
     "title": "",
     "section": "",
-    "text": "← back to home"
-  },
-  {
-    "objectID": "blog.html#blog",
-    "href": "blog.html#blog",
-    "title": "",
-    "section": "Blog",
-    "text": "Blog\n\nRough draft musings on machine learning, software engineering, startups, and life.\n\n\n\n\n\nNovember 25, 2024   Problems and Ideas, c. Fall 2024\n\n\nSeptember 15, 2024   The Next Frontiers: Personalization of AI models\n\n\nNovember 5, 2022   A Simple functorch Example"
-  },
-  {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "",
-    "section": "",
-    "text": "← back to home"
-  },
-  {
-    "objectID": "cv.html#cv-portfolio",
-    "href": "cv.html#cv-portfolio",
-    "title": "",
-    "section": "CV / Portfolio",
-    "text": "CV / Portfolio\n\nTemporally-organized overview of some my work.\n\n\n\n\nProjects\n\ntorchplate: A minimal, open-source experiment framework for machine learning workflows in PyTorch. 2022-2023 \nrsbox: An open-source toolbox of utility functions for machine learning in Python.\n\nProbabilistic Methods for Parkinson’s Disease Diagnosis: Developed a novel approach using Gaussian distributions to model curvature in hand-drawn spirals\n\nWon CS 109 challenge (1st place among 239 participants)"
-  },
-  {
-    "objectID": "blog/functorch.html",
-    "href": "blog/functorch.html",
-    "title": "A Simple functorch Example",
-    "section": "",
-    "text": "← back to home, blog\n\n\n\nIn recent years, there has been a small movement of people trying to go from stateful (Python OOP, class-based modules) to stateless (pure functions) neural network code. The standard PyTorch nn.module is indeed a OOP-based class. But more recent libraries such as JAX, introduce the ability to feasiby create stateless (just functions!) machine learning models. Now, in PyTorch version 1.13, we have functorch in-tree (in the main package). Why stateless? Read this blog post for the differences, but some reasons for why I like stateless code is because:\n\nLess leaky abstractions (and less unknown abstractions in general!)\nCloser to the mathematical form (after all, a neural network is just a series of functions chained together!)\n\nWhen you learn SGD in class in the mathematical form and then use PyTorch, the disconnect is fairly evident.\n\nLess compute overhead (less things to keep track of internally –&gt; less memory needed)\nAbility to work a lower level (which, in my opinion, can help facilitate new ideas)\nAbility to work with function transformations such as vmap, pmap, jit, and grad (PyTorch has grad… yes I know… but applying grad to a stateless function makes much more intuitive sense than applying it to some stateful module!).\n\nThis might sound like an advertisement for JAX (which might be coming up in a future blog post!), but it is really to set the stage for functorch. functorch is a library that allows you to accomplish nearly all of the above, but in PyTorch! The basic idea is to purify stateful PyTorch modules into stateless functions like this (source):\nimport torch\nimport functorch\nfrom functorch import make_functional\n\nmodel = torch.nn.Linear(3, 3)\nfunc_model, params = make_functional(model)\nAs functorch is relatively new, there aren’t many examples out there showing how to use the library. So the goal of the rest of this post is to provide a simple example for creating an image classifier using functorch and PyTorch and updating the weights using SGD (no torch.optim!).\nHere is the code:\nimport torch\nimport torchplate\nfrom torchplate import experiment\nfrom torchplate import utils\nimport functorch\nfrom functorch import grad, grad_and_value\nimport torch.nn as nn\nimport torch.nn.functional as F\nfrom torch.utils.data import DataLoader\nfrom rsbox import ml\n# import torchopt\nimport requests\nfrom tqdm.auto import tqdm\nimport cloudpickle as cp\nfrom urllib.request import urlopen\n\n\n\nclass Net(nn.Module):\n    def __init__(self):\n        super().__init__()\n        self.fc1 = nn.Linear(3*32*32, 120)\n        self.fc2 = nn.Linear(120, 84)\n        self.fc3 = nn.Linear(84, 16)\n        self.fc4 = nn.Linear(16, 3)\n\n    def forward(self, x):\n        x = torch.flatten(x, 1)\n        x = F.relu(self.fc1(x))\n        x = F.relu(self.fc2(x))\n        x = F.relu(self.fc3(x))\n        x = self.fc4(x)\n        return x\n\n\n\nclass OptExp:\n    def __init__(self): \n        self.model_module = Net()\n        self.criterion = nn.CrossEntropyLoss()\n        dataset = cp.load(urlopen(\"https://stanford.edu/~rsikand/assets/datasets/mini_cifar.pkl\")) \n        self.trainloader, self.testloader = torchplate.utils.get_xy_loaders(dataset)\n        self.model, self.params = functorch.make_functional(self.model_module)  # init network \n    \n\n    def predict(self, x):\n        \"\"\"returns logits\"\"\"\n        assert self.model is not None\n        assert self.params is not None\n        logits = self.model(self.params, x)\n        return logits \n\n\n    @staticmethod\n    def sgd_step(params, gradients, lr):\n        \"\"\"one gradient step for updating the weights\"\"\"\n        updated_params = []\n        for param, gradient in zip(params, gradients):\n            update = param - (lr * gradient)\n            updated_params.append(update)\n        \n        return tuple(updated_params)\n    \n\n    @staticmethod\n    def stateless_loss(params, model, criterion, batch):\n        \"\"\"\n        Need to perform forward pass and loss calculation in one function\n        since we need gradients w.r.t params (must be args[0]). The first\n        value we return also needs to be the scalar loss value.  \n        \"\"\"\n        x, y = batch\n        logits = model(params, x)\n        loss_val = criterion(logits, y)\n        return loss_val, logits\n    \n\n\n    @staticmethod\n    def train_step(params, model, criterion, batch, lr):\n        \"\"\"Combine this all into one function for modularity\"\"\"\n        # has_aux means we can return more than just the scalar loss \n        grad_and_loss_fn = grad_and_value(OptExp.stateless_loss, has_aux=True)  \n        grads, aux_outputs = grad_and_loss_fn(params, model, criterion, batch)  # get the grads \n        loss_val, logits = aux_outputs\n        params = OptExp.sgd_step(params, grads, lr) \n        return params, loss_val, logits\n\n    \n    def train(self, num_epochs=10, lr=0.01):\n        print('Beginning training!')\n        epoch_num = 0\n        for epoch in range(num_epochs):\n            running_loss = 0.0\n            epoch_num += 1\n            tqdm_loader = tqdm(self.trainloader)\n            for batch in tqdm_loader:\n                tqdm_loader.set_description(f\"Epoch {epoch_num}\")\n\n                # update params with one step \n                self.params, loss_val, logits = OptExp.train_step(self.params, self.model, self.criterion, batch, lr)\n\n                running_loss += loss_val\n\n            # print loss\n            epoch_avg_loss = running_loss/len(self.trainloader)\n            print(\"Training Loss (epoch \" + str(epoch_num) + \"):\", epoch_avg_loss)\n\n\n        print('Finished training!')\n\n\nexp = OptExp()\nexp.train(num_epochs=50, lr=0.01)"
+    "text": "Stanford CS (AI) B.S., M.S. 2025.\n\n\n\n\n\n\nI am interested in AI research, ML engineering, startups, and venture capital.\nIn the past, I’ve conducted research in self-supervised learning at SAIL, engineered segmentation models at insitro, and built many ML projects.\nI also infrequently write about startups and venture capital on Substack at Rohan’s Random Walks.\nIn my free time, I play golf and poker. \n\n\n\n\n\n\n\nBlog\nPortfolio\nMisc."
   },
   {
     "objectID": "blog/hello.html",
@@ -105,17 +56,80 @@
     "text": "What is SIMT?\n…"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "",
+    "objectID": "blog/functorch.html",
+    "href": "blog/functorch.html",
+    "title": "A Simple functorch Example",
     "section": "",
-    "text": "Stanford CS (AI) B.S., M.S. 2025.\n\n\n\n\n\nI am interested in AI research, ML engineering, startups, and venture capital.\nIn the past, I’ve conducted research in self-supervised learning at SAIL, engineered segmentation models at insitro, and built many ML projects.\nI also infrequently write about startups and venture capital on Substack at Rohan’s Random Walks.\nIn my free time, I play golf and poker. \n\n\n\n\n\n\n\nBlog\nPortfolio\nMisc."
+    "text": "← back to home, blog\n\n\n\nIn recent years, there has been a small movement of people trying to go from stateful (Python OOP, class-based modules) to stateless (pure functions) neural network code. The standard PyTorch nn.module is indeed a OOP-based class. But more recent libraries such as JAX, introduce the ability to feasiby create stateless (just functions!) machine learning models. Now, in PyTorch version 1.13, we have functorch in-tree (in the main package). Why stateless? Read this blog post for the differences, but some reasons for why I like stateless code is because:\n\nLess leaky abstractions (and less unknown abstractions in general!)\nCloser to the mathematical form (after all, a neural network is just a series of functions chained together!)\n\nWhen you learn SGD in class in the mathematical form and then use PyTorch, the disconnect is fairly evident.\n\nLess compute overhead (less things to keep track of internally –&gt; less memory needed)\nAbility to work a lower level (which, in my opinion, can help facilitate new ideas)\nAbility to work with function transformations such as vmap, pmap, jit, and grad (PyTorch has grad… yes I know… but applying grad to a stateless function makes much more intuitive sense than applying it to some stateful module!).\n\nThis might sound like an advertisement for JAX (which might be coming up in a future blog post!), but it is really to set the stage for functorch. functorch is a library that allows you to accomplish nearly all of the above, but in PyTorch! The basic idea is to purify stateful PyTorch modules into stateless functions like this (source):\nimport torch\nimport functorch\nfrom functorch import make_functional\n\nmodel = torch.nn.Linear(3, 3)\nfunc_model, params = make_functional(model)\nAs functorch is relatively new, there aren’t many examples out there showing how to use the library. So the goal of the rest of this post is to provide a simple example for creating an image classifier using functorch and PyTorch and updating the weights using SGD (no torch.optim!).\nHere is the code:\nimport torch\nimport torchplate\nfrom torchplate import experiment\nfrom torchplate import utils\nimport functorch\nfrom functorch import grad, grad_and_value\nimport torch.nn as nn\nimport torch.nn.functional as F\nfrom torch.utils.data import DataLoader\nfrom rsbox import ml\n# import torchopt\nimport requests\nfrom tqdm.auto import tqdm\nimport cloudpickle as cp\nfrom urllib.request import urlopen\n\n\n\nclass Net(nn.Module):\n    def __init__(self):\n        super().__init__()\n        self.fc1 = nn.Linear(3*32*32, 120)\n        self.fc2 = nn.Linear(120, 84)\n        self.fc3 = nn.Linear(84, 16)\n        self.fc4 = nn.Linear(16, 3)\n\n    def forward(self, x):\n        x = torch.flatten(x, 1)\n        x = F.relu(self.fc1(x))\n        x = F.relu(self.fc2(x))\n        x = F.relu(self.fc3(x))\n        x = self.fc4(x)\n        return x\n\n\n\nclass OptExp:\n    def __init__(self): \n        self.model_module = Net()\n        self.criterion = nn.CrossEntropyLoss()\n        dataset = cp.load(urlopen(\"https://stanford.edu/~rsikand/assets/datasets/mini_cifar.pkl\")) \n        self.trainloader, self.testloader = torchplate.utils.get_xy_loaders(dataset)\n        self.model, self.params = functorch.make_functional(self.model_module)  # init network \n    \n\n    def predict(self, x):\n        \"\"\"returns logits\"\"\"\n        assert self.model is not None\n        assert self.params is not None\n        logits = self.model(self.params, x)\n        return logits \n\n\n    @staticmethod\n    def sgd_step(params, gradients, lr):\n        \"\"\"one gradient step for updating the weights\"\"\"\n        updated_params = []\n        for param, gradient in zip(params, gradients):\n            update = param - (lr * gradient)\n            updated_params.append(update)\n        \n        return tuple(updated_params)\n    \n\n    @staticmethod\n    def stateless_loss(params, model, criterion, batch):\n        \"\"\"\n        Need to perform forward pass and loss calculation in one function\n        since we need gradients w.r.t params (must be args[0]). The first\n        value we return also needs to be the scalar loss value.  \n        \"\"\"\n        x, y = batch\n        logits = model(params, x)\n        loss_val = criterion(logits, y)\n        return loss_val, logits\n    \n\n\n    @staticmethod\n    def train_step(params, model, criterion, batch, lr):\n        \"\"\"Combine this all into one function for modularity\"\"\"\n        # has_aux means we can return more than just the scalar loss \n        grad_and_loss_fn = grad_and_value(OptExp.stateless_loss, has_aux=True)  \n        grads, aux_outputs = grad_and_loss_fn(params, model, criterion, batch)  # get the grads \n        loss_val, logits = aux_outputs\n        params = OptExp.sgd_step(params, grads, lr) \n        return params, loss_val, logits\n\n    \n    def train(self, num_epochs=10, lr=0.01):\n        print('Beginning training!')\n        epoch_num = 0\n        for epoch in range(num_epochs):\n            running_loss = 0.0\n            epoch_num += 1\n            tqdm_loader = tqdm(self.trainloader)\n            for batch in tqdm_loader:\n                tqdm_loader.set_description(f\"Epoch {epoch_num}\")\n\n                # update params with one step \n                self.params, loss_val, logits = OptExp.train_step(self.params, self.model, self.criterion, batch, lr)\n\n                running_loss += loss_val\n\n            # print loss\n            epoch_avg_loss = running_loss/len(self.trainloader)\n            print(\"Training Loss (epoch \" + str(epoch_num) + \"):\", epoch_avg_loss)\n\n\n        print('Finished training!')\n\n\nexp = OptExp()\nexp.train(num_epochs=50, lr=0.01)"
   },
   {
-    "objectID": "index.html#rohan-sikand",
-    "href": "index.html#rohan-sikand",
+    "objectID": "cv.html",
+    "href": "cv.html",
     "title": "",
     "section": "",
-    "text": "Stanford CS (AI) B.S., M.S. 2025.\n\n\n\n\n\nI am interested in AI research, ML engineering, startups, and venture capital.\nIn the past, I’ve conducted research in self-supervised learning at SAIL, engineered segmentation models at insitro, and built many ML projects.\nI also infrequently write about startups and venture capital on Substack at Rohan’s Random Walks.\nIn my free time, I play golf and poker. \n\n\n\n\n\n\n\nBlog\nPortfolio\nMisc."
+    "text": "← back to home"
+  },
+  {
+    "objectID": "cv.html#cv-portfolio",
+    "href": "cv.html#cv-portfolio",
+    "title": "",
+    "section": "CV / Portfolio",
+    "text": "CV / Portfolio\n\nTemporally-organized overview of some my work.\n\nThis page will be updated soon…\n\n\n\nProjects\n\n\nmin-llm: (WIP) Minimal implementations of LLM components for learning purposes. 2024- \nGPbeT: An LLM-powered user interface to assist in sports betting. 2024 \nCS 231N Project: Prototypical pre-training for visual representation learning. 2023 \nCS 330 Project: Gradient-based meta learning for morphologically diverse few-shot cell segmentation. 2022 \nCS 221 Project: Distributionally robust multi-task optimization for fair skin cancer classification. 2022 \ntorchplate: A minimal, open-source experiment framework for machine learning workflows in PyTorch. 2022-2023 \nrsbox: An open-source toolbox of utility functions for machine learning in Python. 2022-2023 \nddpm-pytorch: Minimal implementation of denoising diffusion probabilistic models (DDPM) in PyTorch. 2022-2023 \nCS 109 Project: Developed a novel approach using Gaussian distributions to model curvature in hand-drawn spirals. Won CS 109 challenge (1st place among 239 participants) 2022 \nlemnos: An open source light-weight command-line to-do list manager, built with python. 2021-2022 \n\n\n\nResearch\n\n\n“Contrastive ground-level image and remote sensing pre-training improves representation learning for natural world imagery” (ECCV 2024).\n“Beyond the imitation game: Quantifying and extrapolating the capabilities of language models” (ICLR 2023, Spotlight).\n“Prototypical Pre-Training for Visual Representation Learning”"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "",
+    "section": "",
+    "text": "← back to home"
+  },
+  {
+    "objectID": "blog.html#blog",
+    "href": "blog.html#blog",
+    "title": "",
+    "section": "Blog",
+    "text": "Blog\n\nRough draft musings on machine learning, software engineering, startups, and life.\n\n\n\n\n\nNovember 25, 2024   Problems and Ideas, c. Fall 2024\n\n\nSeptember 15, 2024   The Next Frontiers: Personalization of AI models\n\n\nNovember 5, 2022   A Simple functorch Example"
+  },
+  {
+    "objectID": "blog/problems.html",
+    "href": "blog/problems.html",
+    "title": "",
+    "section": "",
+    "text": "← back to home, blog"
+  },
+  {
+    "objectID": "blog/problems.html#problems-and-ideas-c.-fall-2024",
+    "href": "blog/problems.html#problems-and-ideas-c.-fall-2024",
+    "title": "",
+    "section": "Problems and Ideas, c. Fall 2024",
+    "text": "Problems and Ideas, c. Fall 2024\nHere is (an ongoing) list of some problems and ideas I am currently thinking about, circa November 2024. If you have any thoughts, please reach out!\n\nPoor FLOP utilization of GPU cores: billions on top of billions are being spent on compute to power the recent AI revolution, propelling NVIDIA to be the most valuable company in the world. From well-funded labs to seed-stage startups, buying GPU’s for training and performing inference with increasingly large models is necessary. However, what most people don’t realize is that the physical cores on these GPU’s are often underutilized, on training and inference jobs. The recent Llama 3 technical report (see page 10 here) states 38-43% MFU (Model FLOPs Utilization) during the training of this suite of models. That’s right: one of the world’s most funded and talent-dense research labs can’t even achieve half of complete FLOP utilization of its compute infrastructure. With over half a trillion in spending on AI, you’d think we’d better be utilizing each individual GPU core to the best of its ability at every second–idle time per core effectively costs billions of dollars over time. How can we solve this problem? Perhaps a generalizable framework for writing CUDA kernels? Better GPU programmers? Model-specific hardware? Something you propose? I’m not sure, and I think this is a really difficult technical problem. But if you have any thoughts, please let me know.\nNo AI-first horizontal robotics platform and infra: ROS is subpar, is old software, and is not designed to be integrated with the modern AI stack. New robotics companies are building robotics platforms from the ground up, through forward-thinking systems languages like Rust. Matic’s robotic stack literally runs inside a single compiled rust process on-device (apparently you can deploy your PyTorch model endpoint through a CUDA kernel ported to rust to run on-device)! In addition to building better platforms, we are going to need better infra. AI models are getting larger and larger. LLM’s that OpenAI and Anthropic build can run on acre-scale datacenters without issue. But how are we going to deploy billions-scale ACT’s or VLA’s on-device for physical, robotic applications? Essential points of interest include low-latency, non-leaky abstractions, and specialized hardware. In 10 years, the world will look a lot more roboticized than it is today. Many are predicting GPT-like moments for robotic manipulation. If successful, industries that require manual labor are bound to be severely transformed. How are we going to build the infrastructure to support all of this?\n\n\n\n\nAI in medicine for diagnostic purposes: The potential for using AI for medical diagnostic purposes is actually what first got me interested in machine learning a half decade ago. “We can classify lung nodules as cancerous or not months before symptoms appear?!” I read. Yet, despite significant progress in academia, bureaucratic obstacles, resistance from traditionalist healthcare staff, and the lack of robustness in machine learning models continue to hinder the transformative potential of AI in healthcare. How will we fix this?"
+  },
+  {
+    "objectID": "blog/personalai.html",
+    "href": "blog/personalai.html",
+    "title": "",
+    "section": "",
+    "text": "← back to home, blog"
+  },
+  {
+    "objectID": "blog/personalai.html#the-next-frontiers-personalization-of-ai-models",
+    "href": "blog/personalai.html#the-next-frontiers-personalization-of-ai-models",
+    "title": "",
+    "section": "The Next Frontiers: Personalization of AI models",
+    "text": "The Next Frontiers: Personalization of AI models\nThis post is part of my \"The Next Frontiers\" series where I delve deeper into a technology that I think will be pervasive across society in 5 to 15 years.\nThis post focuses on the personalization of AI models. Right now, we have these uniform mega-models that are hosted in the cloud, running in application layer products. For each application, the weights stay the same, meaning the model itself is the same for application A and application B. Perhaps this means generality, but it can also be a limitation. Instead of having a 175B-parameter model that is deployed on application A and application B, what if we have separate LoRa-adapted, fine-tuned models for application’s A and B respectively.\n\nComputational gains: due to Moore’s law, training ML models will become more efficient and less expensive per parameter. This enables larger models to be trained at a cheaper cost. Perhaps the real benefit of the increasing computational and hardware efficiencies is realized in the inference realm. It is not far fetched that we can have 175B parameter models running on device in the near future.\nResearch and algorithmic gains: The advent of scaling laws, the scaling hypothesis, and the bitter lesson all point to the fact that methods that leverage computation efficiently will perform better in the long run. This implies that the larger the model, the better it will perform. However, recent algorithmic advances add another tangent to think about. OpenAI’s strawberry algorithm scales inference-time compute to be able to reason better. Notably, this advancement is detached from an increasing in model size and training compute: it was all done on the inference side. The conseqouence of this is that smaller models, embedded with these newfound reasoning capabilities due to inference-time compute, might result in the adoption of smaller models across the application layer. More specificially, reasoning increases might lead to applications training their own 1B-parameter models instead of relying on the ChatGPT 175B+-model api. Another example of algorithmic development is that of State Space Models (SSM’s). The premise behind these models is that they scale linearly wrt the input size instead of quadratically like transformers do. Cartesia, the company developing these models for real-world use, thinks that this development will enable ubiqitious intelligence at scale, on any device.\nMiddle-layer developments: include techniques such as RAG. Thinking of layers, one can imagine the base layer as the OpenAI API model, the middle layer as something like RAG, and the application (final) layer as the product which is offered to the user. These middle layers essentially try to make the models more tailored for application use. For some reasons that I cannot quite pin down yet, I am slightly bearish on these seeing any long-term adoption. I think this is due to the previous two points: if we ride the waves of (1) computational advances and (2) reasoning and algorithmic advances, middle layer technologies lose their moat and become unnessary: what is the point of RAG if we can have a small model training on the user’s documents themselves? I do however think there exists a n-to-m year latency where n is upper bounded by ~2 and m is upper bounded by ~10 in which middle layer technologies like RAG stay relevant towards the goal of personalization of AI models.\nSome remaining questions:\n\nHow do we iterively update models on the fly in presence of new data? If we deploy a small model on-device tailored for a specific user, what do we do after they added 100 more documents to their device? Do we warm start the pre-training process? Fine-tune with LoRa? If so, how would one train these models on the fly, on-device, untethered from the cloud?\nPerhaps we avoid all of this by \"in-context learning\" and avoid gradient updates all together.\n\nConlusion: All of the above questions and comments remain pain points for getting AI models to be more personalized. Though, the resulting increase in algorithmic and computational advances might lead us to a world where we all have a small model living in our device, trained on our own data. One that understands us a bit better. A more personalized AI model. A second brain of some sorts."
+  },
+  {
+    "objectID": "misc.html",
+    "href": "misc.html",
+    "title": "",
+    "section": "",
+    "text": "← back to home"
+  },
+  {
+    "objectID": "misc.html#misc.",
+    "href": "misc.html#misc.",
+    "title": "",
+    "section": "Misc.",
+    "text": "Misc.\n\nNotes\n\nUseful snippets toolbox\nKnowledge\nENGR 108: Matrix Methods notes\nCS 103: Theory of Computation notes\nCS 107: Computer Systems notes\nCS 109: Probability notes\nCS 221: Artificial Intelligence notes\nCS 330: Meta Learning notes"
   }
 ]
