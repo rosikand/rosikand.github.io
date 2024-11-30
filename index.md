@@ -39,7 +39,7 @@ Stanford CS (AI) B.S., M.S. 2025.
 - I am interested in AI research, ML engineering, startups, and venture capital.
 - In the past, I've conducted **research** in self-supervised learning at [SAIL](https://ai.stanford.edu/), engineered segmentation models at **[insitro](https://www.insitro.com/)**, and built many ML projects.
 - I also infrequently write about startups and venture capital on **Substack** at [Rohan's Random Walks](https://rosikand.substack.com/).
-- In my free time, I play **[golf](./cv.qmd)** and poker. 
+- In my free time, I play **[golf](./golf.md)** and poker. 
 <!-- - Currently, I am working on a few projects: 
   - **edge VLA inference**: how to deploy and speed up large vision-language-action models to run on-device for robotic arms. 
   - **Research on scaling inference-time compute**: how to make inference-time compute more efficient for improved reasoning. 
