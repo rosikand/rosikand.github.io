@@ -4,7 +4,6 @@ format:
     mainfont: system-ui
     # minimal: true
     css: styles/home.css
-    title: ro
 ---
 
 <!-- Meta -->
