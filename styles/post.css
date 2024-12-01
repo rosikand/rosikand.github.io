@@ -1,17 +1,16 @@
 @import url("./home.css");
 
-
 /* body {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 } */
-
 
 .home-page-nav-link {
     color: rgb(0, 0, 0);
 }
 
 .arrow-back-header {
-    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic,
+        sans-serif;
 }
 
 .date {
@@ -27,4 +26,12 @@ ul {
 
 li {
     margin-bottom: 20px;
+}
+
+.post-image {
+    width: 50%;
+    height: auto;
+    border-radius: 3.5%;
+    border: 2px solid black;
+    /* object-fit: cover; */
 }
