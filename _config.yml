@@ -1,7 +1,7 @@
 title: Personal website
 description: Personal website
 url: "https://rosikand.github.io"
-baseurl: "/newpw"
+baseurl: ""
 markdown: kramdown
 kramdown:
   math_engine: mathjax
@@ -15,3 +15,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - scripts
+  - DEPLOYMENT.md
+  - EDITING.md
+  - LOCAL_DEV.md
+  - WORKLOG.md

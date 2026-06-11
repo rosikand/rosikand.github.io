@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Evolving AI Startup Market Landscape - Spring 2026
-description: Raw notes on the evolving AI startup landscape, c. Spring 2026. 
+description: Raw notes on the evolving AI startup landscape, c. Spring 2026 
 date: 2026-05-17
 tag: ai
 math: true

@@ -8,10 +8,10 @@ title: Research
 <div class="papers-section">
     {% for item in site.data.research %}
     <div class="paper">
+        <p><strong>{{ item.title }}</strong></p>
         {% if item.authors %}
-        <p><strong>{{ item.authors }}</strong></p>
+        <em>{{ item.authors }}</em>
         {% endif %}
-        <em>{{ item.title }}</em>
         {% if item.meta %}
         <div class="paper-meta">{{ item.meta }}</div>
         {% endif %}
@@ -25,3 +25,28 @@ title: Research
     </div>
     {% endfor %}
 </div>
+
+{% if site.data.projects and site.data.projects.size > 0 %}
+<h2>Projects</h2>
+
+<div class="papers-section">
+    {% for item in site.data.projects %}
+    <div class="paper">
+        <p><strong>{{ item.title }}</strong></p>
+        {% if item.description %}
+        <em>{{ item.description }}</em>
+        {% endif %}
+        {% if item.meta %}
+        <div class="paper-meta">{{ item.meta }}</div>
+        {% endif %}
+        {% if item.links %}
+        <div class="paper-links">
+            {% for link in item.links %}
+            <a href="{{ link.url }}">{{ link.label }}</a>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+{% endif %}

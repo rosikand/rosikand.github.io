@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Problems and Ideas, c. Fall 2024
-description: A list of some problems and ideas I am currently thinking about, circa November 2024  
+title: Problems and Ideas - Fall 2024
+description: A list of some problems and ideas I am currently thinking about, c. Fall 2024  
 date: 2024-11-25
 tag: ai
 math: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Research Ideas - Spring 2026"
-description: "A laundry list of some research ideas, circa Spring 2026"
+description: "A laundry list of some research ideas, c. Spring 2026"
 date: 2026-05-22
 tag: technical
 math: true

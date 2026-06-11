@@ -6,12 +6,14 @@ date: 2026-05-10
 tag: ai
 math: true
 hidden: true
+published: false
 ---
 
 This is a dummy template post. It is hidden from the posts index because the front matter has:
 
 ```yaml
 hidden: true
+published: false
 ```
 
 Delete that line, or set it to `false`, when you want the post to appear on the posts page.

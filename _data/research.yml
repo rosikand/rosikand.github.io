@@ -1,6 +1,22 @@
-- authors: Self-Distillation without Imitation - Bootstrapping Dense Rewards with Privileged Information 
-  title: 
-  meta: Add venue, status, collaborators, or a one-line note
+- title: Self-Distillation without Imitation - Bootstrapping Dense Rewards with Privileged Information
+  authors: Work in Progress (2026)
+  meta:
+  # links:
+  #   - label: Link
+  #     url: "#"
+- authors: Andy V. Huynh, Lauren E. Gillespie, Jael Lopez-Saucedo, Claire Tang, Rohan Sikand, Moisés Expósito-Alonso
+  title: Contrastive ground-level image and remote sensing pre-training improves representation learning for natural world imagery
+  meta: European Conference on Computer Vision (ECCV), 2024
   links:
-    - label: Link
-      url: "#"
+    - label: Paper
+      url: "https://link.springer.com/chapter/10.1007/978-3-031-72989-8_10"
+    - label: arXiv
+      url: "https://arxiv.org/abs/2409.19439"
+- title: Beyond the Imitation Game - Quantifying and extrapolating the capabilities of language models
+  authors: Aarohi Srivastava, Abhinav Rastogi, Abhishek Rao, et al. (incl. Rohan Sikand)
+  meta: Transactions on Machine Learning Research (TMLR), 2023
+  links:
+    - label: arXiv
+      url: "https://arxiv.org/abs/2206.04615"
+    - label: Code
+      url: "https://github.com/google/BIG-bench"

@@ -1,0 +1,16 @@
+# Non-research projects shown in the "Projects" section of the Research page.
+# Each entry supports: title (required), description, meta, links.
+- title: Parallax - Agentic Satellite Query Engine
+  description: An AI agent that answers natural-language questions about Earth using live satellite imagery.
+  meta: CS 153 final project, 2026
+  links:
+    - label: GitHub
+      url: "https://github.com/rosikand/cs153-project-final"
+- title: tinyrl
+  description: A minimal reinforcement learning toolkit — simple environments, policies, and training utilities.
+  meta: Open source, 2026
+  links:
+    - label: GitHub
+      url: "https://github.com/rosikand/tinyrl"
+    - label: Docs
+      url: "https://rosikand.github.io/tinyrl/"
