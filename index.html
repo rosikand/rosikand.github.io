@@ -6,7 +6,6 @@ title: Home
 {% assign profile = site.data.profile %}
 
 <section class="about-section">
-    <img src="{{ profile.photo | relative_url }}" alt="{{ profile.name }}" class="profile-photo">
     <div class="bio-content">
         {{ profile.bio | markdownify }}
     </div>

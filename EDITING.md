@@ -64,6 +64,22 @@ tag: technical
 tag: other
 ```
 
+## Add A Blog Post
+
+Use the helper script:
+
+```bash
+./scripts/new-post.sh "My Post Title" -d "One-line preview" -t ai --math
+```
+
+That creates a correctly named file under `_posts/` with the front matter this site expects. Supported tags are `ai`, `technical`, and `other`.
+
+For a hidden draft:
+
+```bash
+./scripts/new-post.sh "Draft Notes" --draft
+```
+
 For the current GitHub Pages test deploy at `https://rosikand.github.io/newpw/`, `_config.yml` should keep:
 
 ```yml
