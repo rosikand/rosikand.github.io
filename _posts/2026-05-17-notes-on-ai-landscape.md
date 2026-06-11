@@ -50,14 +50,14 @@ Reported new holding-company effort founded by former Sequoia partner Ravi Gupta
 
 Founded by former Oaktree MD along with Zach Frankl, and a few other technical people (including a recent Stanford alum!). 
 
-The publicly available information is sparse, but the model appears similar: acquire services companies, then improve operations through AI and software. The jobs postings they have online gives us similar insight: they have people working on M&A to source and dilligence services businesses, and then a team of engineers and operators who work to grow the business. Focus on long-term holding. A recent podcast between Elad Gil and Alex Taubman provides a nice overview.
+The publicly available information is sparse, but the model appears similar: acquire services companies, then improve operations through AI and software. The job postings they have online give us similar insight: they have people working on M&A to source and diligence services businesses, and then a team of engineers and operators who work to grow the business. Focus on long-term holding. A recent podcast between Elad Gil and Alex Taubman provides a nice overview.
 
 
 ### Frontier labs x PE Firms 
 
 While not a specific company, the joint venture that has recently begun between heavyweights in the PE industry and the frontier labs is notable. 
 
-The premise is that these PE firms have tons of portfolio companies that need to be injected with AI to expand margins, but these companies don't have the technical talent to do so. So OpenAI and Anthropic are partnering with the likes of Blackstone to enable this transfer of knowledge and implementation. Both frontier labs are hiring aggressively for the so called "forward deployed engineer" which is half consultant and half engineer. 
+The premise is that these PE firms have tons of portfolio companies that need to be injected with AI to expand margins, but these companies don't have the technical talent to do so. So OpenAI and Anthropic are partnering with the likes of Blackstone to enable this transfer of knowledge and implementation. Both frontier labs are hiring aggressively for the so-called "forward-deployed engineer" which is half consultant and half engineer. 
 
 It is a trade that makes logical sense: frontier labs have talent to deploy and the PE firms have businesses that need the AI talent, but can't afford it in house. 
 
@@ -68,12 +68,12 @@ It is a trade that makes logical sense: frontier labs have talent to deploy and 
 
 ### Modal
 
-Develops broad range of cloud infrastructure products. Most notable for serverless access to GPU's for model inference and training. I have personally been a big fan of their work and team, and use Modal sometimes for training models. Seems to be focusing a lot on the inference side of things too, given the asymmetric demand for it. 
+Develops broad range of cloud infrastructure products. Most notable for serverless access to GPUs for model inference and training. I have personally been a big fan of their work and team, and use Modal sometimes for training models. Seems to be focusing a lot on the inference side of things too, given the asymmetric demand for it. 
 
 
 ### Together AI 
 
-Has really good systems team, including lots of the worlds best kernel engineers and researchers. Many have come out of Stanford. Tri Dao and Dan Fu are two notable names. 
+Has a really good systems team, including lots of the world's best kernel engineers and researchers. Many have come out of Stanford. Tri Dao and Dan Fu are two notable names. 
 
 
 ### Baseten 
@@ -148,7 +148,7 @@ Team is lean, dense, and extremely technical — think IMO/IOI medalists. Scott 
 
 #### Cursor 
 
-Recently began a merge with Elon's xAI. My understanding of the deal is that Cursor needs compute and xAI needs talent and so this merger is a means for each organization to acquire what they need. Cursor's RL team is solid, housing some notable names including Sasha Rush and some recent Stanford PhD's (whose research I follow). Heavy consumer demand and focus. Seems to have more consumer demand than Cognition, though enterprise adoption compared to them is unclear. 
+Recently began a merger with Elon's xAI. My understanding of the deal is that Cursor needs compute and xAI needs talent and so this merger is a means for each organization to acquire what they need. Cursor's RL team is solid, housing some notable names including Sasha Rush and some recent Stanford PhD's (whose research I follow). Heavy consumer demand and focus. Seems to have more consumer demand than Cognition, though enterprise adoption compared to them is unclear. 
 
 
 ### Sales 
@@ -223,4 +223,4 @@ Data and deployment layer for robotics
 
 
 
-[^1]: As a side note, I'd be very curious to see if these firms try to sell the port co's data to the frontier labs as an alternative revenue stream
+[^1]: As a side note, I'd be very curious to see if these firms try to sell the portcos' data to the frontier labs as an alternative revenue stream.

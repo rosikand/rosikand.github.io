@@ -5,7 +5,10 @@ title: Home
 
 {% assign profile = site.data.profile %}
 
-<section class="about-section">
+<section class="about-section{% if profile.show_photo and profile.photo %} with-photo{% endif %}">
+    {% if profile.show_photo and profile.photo %}
+    <img class="profile-photo" src="{{ profile.photo | relative_url }}" alt="{{ profile.name }}">
+    {% endif %}
     <div class="bio-content">
         {{ profile.bio | markdownify }}
     </div>

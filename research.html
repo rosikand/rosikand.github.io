@@ -3,25 +3,32 @@ layout: default
 title: Research
 ---
 
+{% assign show_thumbs = site.data.settings.research_thumbnails %}
+
 <h1>Research</h1>
 
 <div class="papers-section">
     {% for item in site.data.research %}
-    <div class="paper">
-        <p><strong>{{ item.title }}</strong></p>
-        {% if item.authors %}
-        <em>{{ item.authors }}</em>
+    <div class="paper{% if show_thumbs and item.image %} with-thumb{% endif %}">
+        {% if show_thumbs and item.image %}
+        <img class="paper-thumb" src="{{ item.image | relative_url }}" alt="{{ item.title }}">
         {% endif %}
-        {% if item.meta %}
-        <div class="paper-meta">{{ item.meta }}</div>
-        {% endif %}
-        {% if item.links %}
-        <div class="paper-links">
-            {% for link in item.links %}
-            <a href="{{ link.url }}">{{ link.label }}</a>
-            {% endfor %}
+        <div class="paper-body">
+            <p><strong>{{ item.title }}</strong></p>
+            {% if item.authors %}
+            <em>{{ item.authors }}</em>
+            {% endif %}
+            {% if item.meta %}
+            <div class="paper-meta">{{ item.meta }}</div>
+            {% endif %}
+            {% if item.links %}
+            <div class="paper-links">
+                {% for link in item.links %}
+                <a href="{{ link.url }}">{{ link.label }}</a>
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>
-        {% endif %}
     </div>
     {% endfor %}
 </div>
@@ -31,21 +38,26 @@ title: Research
 
 <div class="papers-section">
     {% for item in site.data.projects %}
-    <div class="paper">
-        <p><strong>{{ item.title }}</strong></p>
-        {% if item.description %}
-        <em>{{ item.description }}</em>
+    <div class="paper{% if show_thumbs and item.image %} with-thumb{% endif %}">
+        {% if show_thumbs and item.image %}
+        <img class="paper-thumb" src="{{ item.image | relative_url }}" alt="{{ item.title }}">
         {% endif %}
-        {% if item.meta %}
-        <div class="paper-meta">{{ item.meta }}</div>
-        {% endif %}
-        {% if item.links %}
-        <div class="paper-links">
-            {% for link in item.links %}
-            <a href="{{ link.url }}">{{ link.label }}</a>
-            {% endfor %}
+        <div class="paper-body">
+            <p><strong>{{ item.title }}</strong></p>
+            {% if item.description %}
+            <em>{{ item.description }}</em>
+            {% endif %}
+            {% if item.meta %}
+            <div class="paper-meta">{{ item.meta }}</div>
+            {% endif %}
+            {% if item.links %}
+            <div class="paper-links">
+                {% for link in item.links %}
+                <a href="{{ link.url }}">{{ link.label }}</a>
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>
-        {% endif %}
     </div>
     {% endfor %}
 </div>

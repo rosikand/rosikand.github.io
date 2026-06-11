@@ -1,6 +1,7 @@
 name: Rohan Sikand
 email: rsikand@stanford.edu
 photo: /images/linkedin-profile-pic.jpeg
+show_photo: false   # set to true to show the photo on the home page
 bio: |
   Hey! I'm Rohan. I am a BS/MS student at Stanford University studying Computer Science. I am interested in **AI research, ML engineering, startups, and venture capital**. I spend about half my day thinking, reading, and doing ML [research](./research) and the other half is spent thinking and writing about [AI startups](./posts/notes-on-ai-landscape) and venture capital. Sometimes, though infrequently, I go to class. 
   

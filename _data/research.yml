@@ -1,10 +1,12 @@
 - title: Self-Distillation without Imitation - Bootstrapping Dense Reward Models from Privileged Information
+  image: "/images/thumbnails/thumb-1.svg"
   authors: Work in Progress (2026)
   meta:
-  # links:
-  #   - label: Link
-  #     url: "#"
+  links:
+    - label: Link
+      url: "https://rosikand.github.io/scpo/"
 - authors: Andy V. Huynh, Lauren E. Gillespie, Jael Lopez-Saucedo, Claire Tang, Rohan Sikand, Moisés Expósito-Alonso
+  image: "/images/thumbnails/thumb-2.svg"
   title: Contrastive ground-level image and remote sensing pre-training improves representation learning for natural world imagery
   meta: European Conference on Computer Vision (ECCV), 2024
   links:
@@ -13,6 +15,7 @@
     - label: arXiv
       url: "https://arxiv.org/abs/2409.19439"
 - title: Beyond the Imitation Game - Quantifying and extrapolating the capabilities of language models
+  image: "/images/thumbnails/thumb-3.svg"
   authors: Aarohi Srivastava, Abhinav Rastogi, Abhishek Rao, et al. (incl. Rohan Sikand)
   meta: Transactions on Machine Learning Research (TMLR), 2023
   links:
